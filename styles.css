@@ -202,3 +202,41 @@ footer {
         transform: translate(-50%, -50%); /* Centre parfait */
     }
 }
+/* Styles par défaut pour les écrans de bureau */
+body {
+    font-size: 16px;
+    /* Autres styles */
+}
+
+/* Styles pour les écrans de taille moyenne (tablettes) */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+        /* Autres ajustements */
+    }
+}
+
+/* Styles pour les petits écrans (smartphones) */
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+        /* Autres ajustements */
+    }
+}
+
+/* Exemple d'ajustement pour un élément spécifique */
+.fade-in {
+    animation: fadeIn 2s ease forwards;
+    /* Autres styles */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
